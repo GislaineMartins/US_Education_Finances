@@ -2,7 +2,7 @@
 
 ## Descrição do Projeto de Análise de Dados
 
-### Título: Análise e Classificação de Dados Students Performance
+### Título: Análise e Regressão de Dados 
 
 ### Introdução
 Este projeto foi desenvolvido com o objetivo de responder à pergunta Qual será a classificação de nota (GradeClass) de um aluno novo, dado seu perfil (por exemplo, idade, tempo de estudo semanal, faltas, etc.)? Utilizando um modelo de classificação. Os dados foram retirados da plataforma Kaggle, um repositório popular de datasets para análise de dados e aprendizado de máquina.
