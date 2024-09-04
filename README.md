@@ -30,15 +30,15 @@ A pergunta que buscamos responder neste projeto é: Como posso estimar a TOTALRE
 
 #### 5) Interpretação dos resultados:
   - Avaliação do desempenho do modelo utilizando a métrica de Acurácia.
-
-#### 6) Implementação e Resultados:
   - **Coeficientes:** Cada coeficiente da regressão linear indica o quanto a TOTALREV é afetada por uma unidade adicional em TFEDREV, TSTREV, ou TLOCREV
   - **R²:** O valor de R² indica a proporção da variabilidade da TOTALREV que é explicada pelo modelo.
   - **RMSE e MAE:** Avaliam a precisão das predições feitas pelo modelo.
 
-#### 7) Ajuste e Melhoria do Modelo (Opcional)
+#### 6) Ajuste e Melhoria do Modelo (Opcional)
 - **Transformações de Dados:** Se necessário, considere transformar as variáveis (por exemplo, log-transformar) para melhorar o ajuste do modelo.
 - **Cross-Validation:** Realize validação cruzada para garantir que o modelo seja robusto em diferentes subconjuntos dos dados.
+- 
+#### 7) Conclusão
 
 ## [Documentação](https://github.com/GislaineMartins/US_Education_Finances/wiki)
 
