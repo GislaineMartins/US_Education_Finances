@@ -18,10 +18,9 @@ A pergunta que buscamos responder neste projeto é: Como posso estimar a TOTALRE
  - **Verificar e Tratar Dados Faltantes:** Verifique se há dados ausentes nas colunas relevantes (TOTALREV, TFEDREV, TSTREV, TLOCREV) e trate-os adequadamente (por exemplo, substituindo por média/mediana ou removendo linhas incompletas).
  - **Converter Tipos de Dados:** Certifique-se de que as colunas numéricas estejam no formato correto.
  
- #### 2) Pré-processamento dos Dados:
-- Limpeza dos dados, incluindo tratamento de valores ausentes e inconsistências.
-- Transformação de variáveis categóricas em variáveis numéricas (codificação).
-- Normalização/Padronização dos dados para otimizar o desempenho do modelo de classificação.
+ #### 2) Divisão dos Dados em Treino e Teste:
+- **Dividir em Variáveis Dependentes e Independentes**
+- **Dividir em Treino e Teste**
 
 #### 3) Análise Exploratória dos Dados (EDA):
    - Visualização dos dados para identificar padrões, tendências e possíveis outliers.
