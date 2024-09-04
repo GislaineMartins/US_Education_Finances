@@ -22,24 +22,21 @@ A pergunta que buscamos responder neste projeto é: Como posso estimar a TOTALRE
 - **Dividir em Variáveis Dependentes e Independentes**
 - **Dividir em Treino e Teste**
 
-#### 3) Análise Exploratória dos Dados (EDA):
-   - Visualização dos dados para identificar padrões, tendências e possíveis outliers.
-   - Estatísticas descritivas para entender melhor a distribuição das variáveis.
+#### 3) Treinamento do Modelo:
+   - **Treinar o Modelo de Regressão Linear**
 
-#### 4) Modelagem e Treinamento:
-  - Seleção do modelo de classificação adequado (Árvore de Decisão, K-Nearest Neighbours e Naïve Bayes).
-  - Divisão dos dados em conjuntos de treinamento e teste.
-  - Treinamento do modelo utilizando o conjunto de treinamento.
+#### 4) Avaliação do Modelo:
+  - **Predições no conjunto de teste** 
 
-#### 5) Avaliação do Modelo:
+#### 5) Interpretação dos resultados:
   - Avaliação do desempenho do modelo utilizando a métrica de Acurácia.
 
 #### 6) Implementação e Resultados:
-  - Implementação do modelo de classificação para prever GradeClass que é a variavel para classificar os estudantes.
-  - Interpretação dos resultados e resposta à pergunta de pesquisa.
+  - **Coeficientes:** Cada coeficiente da regressão linear indica o quanto a TOTALREV é afetada por uma unidade adicional em TFEDREV, TSTREV, ou TLOCREV
+  - **R²:** O valor de R² indica a proporção da variabilidade da TOTALREV que é explicada pelo modelo.
+  - **RMSE e MAE:** Avaliam a precisão das predições feitas pelo modelo.
 
-## Resultados
+#### 7) Ajuste e Melhoria do Modelo (Opcional)
+- **Transformações de Dados:** Se necessário, considere transformar as variáveis (por exemplo, log-transformar) para melhorar o ajuste do modelo.
+- **Cross-Validation:** Realize validação cruzada para garantir que o modelo seja robusto em diferentes subconjuntos dos dados.
 
-- O modelo de classificação atingiu uma acurácia de **94%** no conjunto de teste.
-- Observando a acurácia é possivel perceber que a proporção de previsões corretas feitas pelo modelo em relação ao total de previsões foi de quase 100%.
-- Ao inserir novos dados de novos alunos podemos concluir que o modelo será capaz de prever a classificação de alunos em grupos com 94% de acerto.
