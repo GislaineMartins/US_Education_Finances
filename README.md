@@ -12,8 +12,9 @@ A pergunta que buscamos responder neste projeto é: Como posso estimar a TOTALRE
 
 ### Metodologia
  #### 1) Coleta de Dados:
- Os dados foram obtidos da plataforma Kaggle, a partir do dataset Students Performance Dataset.
- O dataset inclui contém informações abrangentes sobre 2.392 estudantes do ensino médio, detalhando seus dados demográficos, hábitos de estudo, envolvimento dos pais, atividades extracurriculares e desempenho acadêmico. Possui 2392 linhas, 17 colunas e algumas variaveis como: idade, Genero, etinia, eduação parental, habitos de estudo entro outros. 
+ Os dados foram obtidos da plataforma Kaggle, a partir do dataset US Education Finances.
+ O dataset contém informações abrangentes sobre 374161 registros para sistemas de escolas públicas. Todos os valores, exceto para associação de outono e renda pessoal, são expressos em milhares de dólares. Os dados de associação de outono são apresentados em valores inteiros. Os totais de renda pessoal são expressos em milhões de dólares. Dentre as variaveis estão: # estado, Associação de Outono, nome da escola, data por ano, Receita total do ensino fundamental secundario, Receita total de fontes federais, Receita total de fontes estaduais, Receita total de fontes locais, Despesas totais atuais com instrução, Despesas correntes totais para serviços de suporte, Outras despesas correntes e Despesa total de desembolso de capital.
+
  
  #### 2) Pré-processamento dos Dados:
 - Limpeza dos dados, incluindo tratamento de valores ausentes e inconsistências.
