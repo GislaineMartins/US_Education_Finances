@@ -8,7 +8,7 @@
 Este projeto foi desenvolvido com o objetivo de responder à pergunta: Como posso estimar a TOTALREV (Receita total) de um distrito escolar com base nas receitas federais (TFEDREV), estaduais (TSTREV) e locais (TLOCREV)? Utilizando um modelo de Regressão Linear. Os dados foram retirados da plataforma Kaggle, um repositório popular de datasets para análise de dados e aprendizado de máquina. A formulação foi feita da seguinte maneira: TOTALREV como variável dependente e TFEDREV, TSTREV, TLOCREV como variáveis independentes.
 
 ### Pergunta de Pesquisa
-A pergunta que buscamos responder neste projeto é: Qual será a classificação de nota (GradeClass) de um aluno novo, dado seu perfil (por exemplo, idade, tempo de estudo semanal, faltas, etc.)?
+A pergunta que buscamos responder neste projeto é: Como posso estimar a TOTALREV (Receita total) de um distrito escolar com base nas receitas federais (TFEDREV), estaduais (TSTREV) e locais (TLOCREV)?
 
 ### Metodologia
  #### 1) Coleta de Dados:
