@@ -11,10 +11,12 @@ Este projeto foi desenvolvido com o objetivo de responder à pergunta: Como poss
 A pergunta que buscamos responder neste projeto é: Como posso estimar a TOTALREV (Receita total) de um distrito escolar com base nas receitas federais (TFEDREV), estaduais (TSTREV) e locais (TLOCREV)?
 
 ### Metodologia
- #### 1) Coleta de Dados:
+ #### 1) Carregar e preparar os dados:
  Os dados foram obtidos da plataforma Kaggle, a partir do dataset US Education Finances.
  O dataset contém informações abrangentes sobre 374161 registros para sistemas de escolas públicas. Todos os valores, exceto para associação de outono e renda pessoal, são expressos em milhares de dólares. Os dados de associação de outono são apresentados em valores inteiros. Os totais de renda pessoal são expressos em milhões de dólares. Dentre as variaveis estão: # estado, Associação de Outono, nome da escola, data por ano, Receita total do ensino fundamental secundario, Receita total de fontes federais, Receita total de fontes estaduais, Receita total de fontes locais, Despesas totais atuais com instrução, Despesas correntes totais para serviços de suporte, Outras despesas correntes e Despesa total de desembolso de capital.
-
+ - Importar os Dados: Carregue a planilha CSV contendo os dados das receitas e despesas escolares.
+ - Verificar e Tratar Dados Faltantes: Verifique se há dados ausentes nas colunas relevantes (TOTALREV, TFEDREV, TSTREV, TLOCREV) e trate-os adequadamente (por exemplo, substituindo por média/mediana ou removendo linhas incompletas).
+ - Converter Tipos de Dados: Certifique-se de que as colunas numéricas estejam no formato correto.
  
  #### 2) Pré-processamento dos Dados:
 - Limpeza dos dados, incluindo tratamento de valores ausentes e inconsistências.
