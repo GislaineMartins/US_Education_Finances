@@ -40,3 +40,5 @@ A pergunta que buscamos responder neste projeto é: Como posso estimar a TOTALRE
 - **Transformações de Dados:** Se necessário, considere transformar as variáveis (por exemplo, log-transformar) para melhorar o ajuste do modelo.
 - **Cross-Validation:** Realize validação cruzada para garantir que o modelo seja robusto em diferentes subconjuntos dos dados.
 
+## [Documentação](https://github.com/GislaineMartins/Students-Performance/wiki)
+
