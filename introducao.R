@@ -58,7 +58,7 @@ sum(is.na(dados$TSTREV))
 sum(is.na(dados$TLOCREV))
 
 
-# Padronizando apenas as variáveis independentes
+# Padronizando as variáveis dependentes e independentes.
 dados$TOTALREV <- scale(dados$TOTALREV)
 dados$TFEDREV <- scale(dados$TFEDREV)
 dados$TSTREV <- scale(dados$TSTREV)
@@ -115,7 +115,7 @@ cat("MAE: ", mae_val, "\n")
 set.seed(42)
 
 # Realizar K-fold cross-validation com K=10
-train_control <- trainControl(method = "cv", number = 10)
+train_control <- trainControl(method = "cv", k = 10)
 modelo_cv <- train(TOTALREV ~ TFEDREV + TSTREV + TLOCREV, data = dados, method = "lm", trControl = train_control)
 
 # Resultados da validação cruzada
@@ -150,8 +150,9 @@ ggplot(dados, aes(x = TOTALREV, y = previsoes)) +
 # *********************************************************************
 
 
-
 # PARTE SOMENTE DE VISUALIZAÇÕES
+
+# Se a distribuição dos dados for muito assimétrica ou tiver valores extremos, considere transformar os dados (por exemplo, usando uma transformação logarítmica) antes de criar o histograma
 
 # Histograma da variável dependente TOTALREV
 # Adicionando uma pequena constante para evitar log(0)
@@ -167,10 +168,10 @@ boxplot(dados$TOTALREV_log, main="Boxplot de TOTALREV")
 
 
 # Histograma das variáveis independentes
-# Aplicando a transformação raiz quadrada como alternativa
+# Aplicando a transformação logaritima
 dados$TFEDREV_log <- log(dados$TFEDREV + 1)
 
-# Criando o histograma com a transformação raiz quadrada
+# Criando o histograma com a transformação logaritima
 ggplot(dados, aes(x = TFEDREV_log)) +
   geom_histogram(binwidth = 0.1, fill = "red", color = "black") +
   labs(title = "Histograma de TFEDREV", x = "TFEDREV", y = "Frequência")
